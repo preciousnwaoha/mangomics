@@ -1,0 +1,35 @@
+.search-bar {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 400px;
+    height: 45px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: var(--theme);
+    color: var(--text-color);
+    font-size: 1.125rem;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+.search-bar input:hover, .search-bar input:focus {
+    border: none;
+    outline: none;
+}
+
+.search-bar button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    margin-top: 0;
+    background: var(--theme);
+    color: var(--text-color);
+    cursor: pointer;
+    border: none;
+    margin: 0.5rem;
+}

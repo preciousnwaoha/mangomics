@@ -1,0 +1,30 @@
+.manga-item-form {
+    text-align: right;
+}
+
+.manga-item-form .btn {
+    background: var(--primary);
+    color: #fafafa;
+    border: 1px solid var(--primary);
+}
+
+.manga-item-form .btn:hover {
+    filter: brightness(90%);
+}
+
+.manga-item-form .input-div {
+    margin-bottom: 10px;
+}
+
+.manga-item-form input {
+    margin-left: 10px;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid var(--primary);
+}
+
+.manga-item-form input:hover, .manga-item-form input:focus {
+    border: 1px solid rgb(0, 94, 170);
+    outline: none;
+}

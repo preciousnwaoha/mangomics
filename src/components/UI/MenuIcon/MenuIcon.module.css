@@ -1,0 +1,17 @@
+.menu-icon {
+    width: 34px;
+    height: 34px;
+    background: var(--theme);
+    text-align: center;
+    transition: .3s;
+}
+
+.menu-icon div{
+    width: 80%;
+    height: 3px;
+    background: var(--text-color);
+    border-radius: 2px;
+    margin: 6px auto;
+    transition: .3s;
+}
+

@@ -1,0 +1,84 @@
+.side-menu {
+    position: fixed;
+    top: 64px;
+    left: -300px;
+    height: calc(100vh - 64px);
+    width: 100%;
+    background: var(--theme);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 8px 8px 0px var(--dark-shadow), 0px 0px 0px 0px #0059ff, 0px 0px 0px 0px #73ff00, 0px 0px 0px 0px #ff0000;
+}
+
+.show {
+    animation: show 0.3s ease-in-out;
+    left: 0;
+}
+.hide {
+    animation: hide 0.3s ease-in-out;
+    left: -300px;
+}
+
+@keyframes show {
+    0% {
+        left: -300px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes hide {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -300px;
+    }
+}
+
+
+
+.hider {
+    display: inline-block;
+    align-self: flex-end;
+    margin: 0.25rem 0.5rem;
+    color: var(--text-color);
+    padding: 0.150rem 0.5rem;
+    border: 3px solid var(--theme);
+    cursor: pointer;
+}
+
+.hider:hover {
+    border: 3px solid var(--theme-sec);
+}
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+}
+
+.list li {
+    text-align: center;
+    padding: 0.825rem 2rem;
+    color: var(--text-color);
+    border-bottom: 2px solid #2c2c2c;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+@media screen and (min-width: 760px) {
+    .side-menu {
+        max-width: 250px;
+    }
+    .list li {
+        text-align: left;
+    }
+    .list li:hover, .list li:focus {
+        border-left: 4px solid var(--primary);
+    }
+    .list li b:hover, .list li b:focus {
+        border-bottom: 0;
+    }
+}

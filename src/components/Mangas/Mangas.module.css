@@ -1,0 +1,41 @@
+.mangas {
+    background: var(--theme);
+    width: 75%;
+    min-width: 450px;
+    margin: 2rem auto;
+    margin-bottom: 1rem;
+}
+
+@media  screen and (max-width: 766px) {
+    .mangas {
+        width: 90%;
+    }
+}
+
+.MangasLoading, .MangasError {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.MangasLoading p{
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: var(--theme-sec);
+    box-shadow: 0 4px 4px #141414;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.MangasError p{
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: var(--theme-sec);
+    box-shadow: 0 4px 4px #141414;
+    color: red;
+    margin-bottom: 2rem;
+}
+
+.mangas ul {
+    padding-left: 0;
+}
+

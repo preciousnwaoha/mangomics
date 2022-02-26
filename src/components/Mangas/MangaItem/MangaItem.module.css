@@ -1,0 +1,25 @@
+.manga-item {
+    list-style: none;
+    padding: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--text-color-sec);
+    color: var(--text-color);
+}
+
+.manga-item h3 {
+    margin: 0;
+}
+
+.manga-item .description {
+    margin: 0;
+    font-size: 14px;
+}
+
+.manga-item .price {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    color: rgb(194, 0, 0);
+}
+
